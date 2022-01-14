@@ -26,7 +26,7 @@ const Report = () => {
 							return <Row style={{ marginBottom: 10 }} gutter={[16, 16]}>
 								<Col span={24}><h4 className="capitalize" style={{ textAlign: 'left' }} >{feature}</h4></Col>
 								{
-									output[feature].map(value => <Col span={8} style={{ width: 40, height: 90 }} ><img width="90" height="90" src={value} /></Col>)
+									output[feature].map(value => <Col span={8} style={{ width: 40, height: 90 }} ><img alt="Reportimage" width="90" height="90" src={value} /></Col>)
 								}
 							</Row>
 						}

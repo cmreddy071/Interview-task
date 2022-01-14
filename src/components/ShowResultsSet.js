@@ -14,7 +14,7 @@ const ShowResultsSet = () => {
 			<div className="generate-report">
 				<Row gutter={[16, 16]}>
 					{
-						nonRealImages?.map(value => <Col span={8} style={{ width: 40, height: 90 }} ><img width="90" height="90" src={value?.imageURL} /></Col>)
+						nonRealImages?.map(value => <Col span={8} style={{ width: 40, height: 90 }} ><img alt="Resultimage" width="90" height="90" src={value?.imageURL} /></Col>)
 					}
 				</Row>
 			</div>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux'
 import * as R from 'ramda';
-import {  Button, Modal, Checkbox, Row, Col, Input, Spin } from 'antd';
+import {  Button, Modal, Checkbox, Row, Col, Input } from 'antd';
 import { addNewFeature } from '../store/NotrealMenuSlice';
 import { updateResults } from '../store/ResultSlice';
 

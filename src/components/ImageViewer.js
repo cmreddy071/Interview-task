@@ -56,7 +56,7 @@ const ImageViewer = () => {
 		/>
 		<div className={!R.isEmpty(imageURL) ? '' : "height250"}>
 			<Spin spinning={loading} tip="Loading...">{
-				!R.isEmpty(imageURL) ? <img width="300" height="250" src={imageURL} /> : <span>No Images available</span>
+				!R.isEmpty(imageURL) ? <img alt="realImage" width="300" height="250" src={imageURL} /> : <span>No Images available</span>
 			}
 			</Spin>
 			{!R.isEmpty(imageURL) &&
