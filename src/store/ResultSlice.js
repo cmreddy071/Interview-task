@@ -9,7 +9,7 @@ export const ResultSlice = createSlice({
   initialState,
   reducers: {
     updateResults:(state,payload)=>{
-        state.nonRealImages.push(payload.payload);
+        state.nonRealImages.unshift(payload.payload);
     }
   },
 })

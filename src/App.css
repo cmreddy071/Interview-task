@@ -1,10 +1,8 @@
 @import '~antd/dist/antd.css';
 .container {
-     height: 622px;
     display: flex;
     justify-content: center;
     text-align: center;
-  background: #ececec;
 }
 .mt-20{
   margin-top: 20px;
@@ -16,26 +14,24 @@
   margin-left: 10px;
 }
 .height250{
-  height: 250px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .feature-container{
-  height: 120px;
   border: 1px solid;
   padding: 14px;
-  /* width: 200px; */
   overflow-y: auto;
 }
 .generate-report{
-  height: 200px; 
+  height: 500px; 
   overflow-y: auto;
     width: 100%;
     overflow-x: hidden;
 }
 .report-scroll{
-  height: 500px; 
+  margin-top: 15px;
+  height: 490px; 
   overflow-y: auto;
     width: 100%;
     overflow-x: hidden;
@@ -45,7 +41,36 @@
   float: right;
 }
 .generate-button{
-  display: flex;
-    justify-content: end;
-    margin-bottom: 20px;
+  position: fixed;
+    top: 105px;
+    right: 42px;
+}
+.user-header{
+  display: inline-block;
+    color: snow;
+    font-size: 24px;
+    font-family: fantasy;
+    margin-left: -23px;
+}
+.header-height{
+  height: 70px;
+}
+.avatar-div{
+  display: inline;
+    float: right;
+}
+.avartar-header{
+  font-size: 15px;
+  color: aliceblue;
+  margin-left: 5px;
+}
+.report-header{
+  position: fixed;
+    top: 120px;
+    left: 222px;
+}
+.non-header{
+  position: fixed;
+    top: 100px;
+    left: 46%;
 }

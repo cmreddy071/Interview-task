@@ -7,11 +7,11 @@ import ImageViewer from './ImageViewer';
 const HomePage = () => {
 
 	return (<div className="container">
-		<Card style={{ width: 400, height: '100%', border: "1px solid gray" }}>
+		<Card style={{ height: '100%', border: "1px solid gray" }}>
 			<ImageViewer />
-			<hr />
-			<ShowResultsSet />
 		</Card>
+		<hr/>
+		<ShowResultsSet />
 	</div>)
 }
 export default HomePage;

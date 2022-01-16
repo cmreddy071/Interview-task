@@ -8,13 +8,14 @@ const ShowResultsSet = () => {
 	const nonRealImages = useSelector((state) => state.results.nonRealImages);
 	return (
 		<>
+			<h2 className="non-header">Non Real Images</h2>
 			<div className="generate-button">
-				<Link to="/report"> <Button disabled={R.isEmpty(nonRealImages)} className="button-properties" type="primary">Generate Report</Button></Link>
+				<Link to="/home/report"> <Button disabled={R.isEmpty(nonRealImages)} className="button-properties" type="primary">Generate Report</Button></Link>
 			</div>
 			<div className="generate-report">
 				<Row gutter={[16, 16]}>
 					{
-						nonRealImages?.map(value => <Col span={8} style={{ width: 40, height: 90 }} ><img alt="Resultimage" width="90" height="90" src={value?.imageURL} /></Col>)
+						nonRealImages?.map(value => <Col span={8} ><img alt="Resultimage" width="190" height="190" src={value?.imageURL} /></Col>)
 					}
 				</Row>
 			</div>
