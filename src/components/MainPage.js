@@ -10,7 +10,7 @@ const { Content } = Layout;
 
 const MainPage=()=>{
     const location=useLocation();
-    return( <Layout>
+    return( <Layout style={{height: '100%'}}>
          <HomePageHeader key="header" />
         <Layout style={{height:585}}>
           <Sider selectedKey={location.pathname} />
