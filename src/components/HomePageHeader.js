@@ -21,7 +21,7 @@ const HomePageHeader=()=>{
         <Layout.Header className="header header-height">
           <div className="user-header" >AVA Video </div>
           <div className="avatar-div">
-          <Avatar size="large" style={{ background: colorCode, color:"white" }}>V</Avatar>
+          <Avatar size="large" style={{ background: colorCode, color:"white" }}>C</Avatar>
           <span className="avartar-header">Chinna</span>
               </div>
         </Layout.Header>

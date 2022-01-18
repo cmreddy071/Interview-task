@@ -9,7 +9,7 @@ const Report = () => {
 	const nonRealImages = useSelector((state) => state.results.nonRealImages);
 	const output={};
 
-	// Listouting no of features and there related non real images.
+	// Listing out no of features and there related non real images.
 	for(let item of nonRealImages){
 		for(let feature of item.features){
 			if(!output[feature]){
