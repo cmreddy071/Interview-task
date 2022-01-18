@@ -3,6 +3,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
+    height: 100%;
 }
 .mt-20{
   margin-top: 20px;
@@ -23,8 +24,12 @@
   padding: 14px;
   overflow-y: auto;
 }
+.image-style{
+  width: 90%;
+  padding-top: 7px;
+  height: 95%;
+}
 .generate-report{
-  height: 500px; 
   overflow-y: auto;
     width: 100%;
     overflow-x: hidden;

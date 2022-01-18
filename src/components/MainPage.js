@@ -12,7 +12,7 @@ const MainPage=()=>{
     const location=useLocation();
     return( <Layout style={{height: '100%'}}>
          <HomePageHeader key="header" />
-        <Layout style={{height:585}}>
+        <Layout style={{height: '100%'}}>
           <Sider selectedKey={location.pathname} />
           <Layout style={{ padding: '0 0 0 24px' }}>
             <CustomBreadcrumb />

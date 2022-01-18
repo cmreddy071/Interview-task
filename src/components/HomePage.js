@@ -7,7 +7,7 @@ import ImageViewer from './ImageViewer';
 const HomePage = () => {
 
 	return (<div className="container">
-		<Card style={{ height: '100%', border: "1px solid gray" }}>
+		<Card style={{ height: '80%', width: '35%', border: "1px solid gray" }}>
 			<ImageViewer />
 		</Card>
 		<hr/>
