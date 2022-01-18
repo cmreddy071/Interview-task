@@ -8,17 +8,25 @@ const ShowResultsSet = () => {
 	const nonRealImages = useSelector((state) => state.results.nonRealImages);
 	return (
 		<>
-			<h2 className="non-header">Non Real Images</h2>
-			<div className="generate-button">
+			<Row>
+			<Col xs={24} md={12} lg={12} xl={12} >
+			<h2>Non Real Images</h2>
+			</Col>
+			<Col xs={24} md={12} lg={12} xl={12} >
 				<Link to="/home/report"> <Button disabled={R.isEmpty(nonRealImages)} className="button-properties" type="primary">Generate Report</Button></Link>
-			</div>
+			</Col>
+			</Row>
+			<Row>
+			<Col xs={24} md={24} lg={24} xl={24} >
 			<div className="generate-report">
 				<Row gutter={[16, 16]}>
 					{
-						nonRealImages?.map(value => <Col xs={24} md={12} lg={6} xl={6} ><img className="image-style" alt="Resultimage" src={value?.imageURL} /></Col>)
+						nonRealImages?.map(value => <Col xs={24} md={12} lg={12} xl={6} ><img className="image-style" alt="Resultimage" src={value?.imageURL} /></Col>)
 					}
 				</Row>
 			</div>
+			</Col>
+			</Row>
 		</>)
 }
 export default ShowResultsSet;

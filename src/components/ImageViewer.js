@@ -54,18 +54,18 @@ const ImageViewer = () => {
 			handleCancel={handleCancel}
 			handleOk={handleOk}
 		/>
-		<div className={!R.isEmpty(imageURL) ? '' : "height250"}>
+		<>
 			<Spin spinning={loading} tip="Loading...">{
-				!R.isEmpty(imageURL) ? <img alt="realImage" width="300" height="250" src={imageURL} /> : <span>No Images available</span>
+				!R.isEmpty(imageURL) ? <img alt="realImage" style={{width: "100%"}} src={imageURL} /> : <span>No Images available</span>
 			}
 			</Spin>
 			{!R.isEmpty(imageURL) &&
-				<div className="mt-20">
-					<Button onClick={onFetchImage} disabled={loading} style={{ width: 143 }} type="primary">Real</Button>
-					<Button disabled={loading} style={{ width: 143 }} onClick={OnopentModal} className="ml-10">Not Real</Button>
+				<div className="mt-20" style={{ textAlign: 'center' }}>
+					<Button onClick={onFetchImage} disabled={loading}  type="primary">Real</Button>
+					<Button disabled={loading}  onClick={OnopentModal} className="ml-10">Not Real</Button>
 				</div>
 			}
-		</div>
+		</>
 	</>)
 }
 export default ImageViewer;

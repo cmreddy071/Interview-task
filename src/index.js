@@ -11,6 +11,7 @@ import MainPage from './components/MainPage';
 ReactDOM.render(
 	<Provider store={store}>
 		<Router>
+			{/* Application Landing page */}
 			<MainPage />
 		</Router>
 	</Provider>,

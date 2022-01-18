@@ -1,10 +1,4 @@
 @import '~antd/dist/antd.css';
-.container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
-}
 .mt-20{
   margin-top: 20px;
 }
@@ -30,6 +24,7 @@
   height: 95%;
 }
 .generate-report{
+  height: 450px;
   overflow-y: auto;
     width: 100%;
     overflow-x: hidden;
