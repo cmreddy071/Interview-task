@@ -24,15 +24,15 @@
   height: 95%;
 }
 .generate-report{
-  height: 450px;
-  overflow-y: auto;
+  height: 100vh;
+  overflow-y: scroll;
     width: 100%;
     overflow-x: hidden;
 }
 .report-scroll{
   margin-top: 15px;
-  height: 490px; 
-  overflow-y: auto;
+  height: 100vh; 
+  overflow-y: scroll;
     width: 100%;
     overflow-x: hidden;
 }
@@ -73,4 +73,11 @@
   position: fixed;
     top: 100px;
     left: 46%;
+}
+.main{
+  overflow-y: scroll;
+  padding: 24px;
+  margin: 0px;
+  min-height: 280px;
+  height: 100vh;
 }

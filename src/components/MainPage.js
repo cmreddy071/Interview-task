@@ -17,15 +17,9 @@ const MainPage=()=>{
           <Layout style={{ padding: '0 0 0 24px' }}>
             <CustomBreadcrumb />
             <Content
-              className="site-layout-background"
-              style={{
-                padding: 24,
-                margin: 0,
-                minHeight: 280,
-                height:510
-              }}
+              className="main"
             >
-			<RouterComponent />
+		        	<RouterComponent />
             </Content>
           </Layout>
         </Layout>
