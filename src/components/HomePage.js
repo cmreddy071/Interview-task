@@ -5,7 +5,6 @@ import ShowResultsSet from './ShowResultsSet';
 import ImageViewer from './ImageViewer';
 
 const HomePage = () => {
-
 	return (<Row>
 		<Col xs={24} md={24} lg={8} xl={8} >
 		<div style={{ padding: 10, background: 'white', width: '90%', border: "1px solid gray" }}>

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Layout, Avatar } from 'antd';
 
+// Return random hex color code
 const getRandomColor=()=> {
     var letters = '0123456789ABCDEF';
     var color = '#';
@@ -10,7 +11,7 @@ const getRandomColor=()=> {
     return color;
   }
   
-
+// Header section of appliction. It contains title and profile(avatar).
 const HomePageHeader=()=>{
     const [colorCode, setColorCode]=useState("rgb(139 102 102)");
     useEffect(()=>{

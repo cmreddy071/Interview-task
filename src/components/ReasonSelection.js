@@ -10,6 +10,7 @@ const ReasonSelection = (props) => {
 	const [checkedList, setCheckedList] = useState([]);
 	const [other, setOther] = useState("");
 	const dispatch = useDispatch();
+	// Fetching avaible features list from store.
 	const features = useSelector((state) => state.features.listOfFeature);
 
 
@@ -19,6 +20,7 @@ const ReasonSelection = (props) => {
 		props.handleCancel();
 	}
 
+	// Update the non real images list.
 	const onOkayChange = () => {
 		let list = [...checkedList];
 		if (other.trim()) {
@@ -40,6 +42,7 @@ const ReasonSelection = (props) => {
 		setOther("");
 		props.handleOk();
 	}
+
 	const onChageValue = (e) => {
 		setOther(e.target.value);
 	}

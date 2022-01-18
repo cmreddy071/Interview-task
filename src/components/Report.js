@@ -5,8 +5,11 @@ import * as R from 'ramda';
 import { Row, Col, Button } from 'antd';
 
 const Report = () => {
+	//Fetching non real images from store.
 	const nonRealImages = useSelector((state) => state.results.nonRealImages);
 	const output={};
+
+	// Listouting no of features and there related non real images.
 	for(let item of nonRealImages){
 		for(let feature of item.features){
 			if(!output[feature]){

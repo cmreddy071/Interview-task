@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { HomeOutlined } from '@ant-design/icons';
 import { Menu, Layout } from 'antd';
 
+// Left sider menu.
 const CustomSider=({selectedKey})=>{
     return(
         <Layout.Sider width={200}>

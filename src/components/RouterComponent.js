@@ -4,6 +4,7 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import HomePage from './HomePage';
 import Report from './Report';
 
+// Routing declaration.
 const RouterComponent =()=>{
     return(
         <Switch>
